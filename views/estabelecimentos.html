@@ -37,131 +37,272 @@
             </div>
         </div>
     </header>
-
-
-    <!-- ========================= LISTAGEM DE ESTABELECIMENTOS ========================= -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Nome do Estabelecimento</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <!-- ========================= DETALHES DO ESTABELECIMENTO ========================= -->
     <div class="container my-5">
-        <h1 class="text-center fw-bold text-body-emphasis mb-4">Nossos Estabelecimentos</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../assets/images/qd new (1).png" class="img-fluid" alt="Nome do Estabelecimento">
+            </div>
+            <div class="col-md-6">
+                <h2>Detalhes do Estabelecimento</h2>
+                <p><strong>Tipo:</strong> Restaurante</p>
+                <p><strong>Localização:</strong> Luanda</p>
+                <p><strong>Descrição:</strong> Uma breve descrição do estabelecimento, incluindo o que ele oferece, horários de funcionamento, e outras informações relevantes.</p>
 
-        <div class="col-lg-6 mx-auto">
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
-                <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search"
-                       class="form-control px-4">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+                <h3>Avaliações</h3>
+                <div class="rating">
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star-half'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Baseado em 120 avaliações.</p>
+
+                <h4>Comentários</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <strong>João Silva:</strong> Ótima comida e ambiente agradável.
+                    </li>
+                    <li>
+                        <strong>Maria Santos:</strong> Atendimento excelente, recomendo.
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <!-- Exemplo de Estabelecimento 1 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (1).png" class="card-img-top" alt="Nome do Estabelecimento 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 1</h5>
-                        <p class="card-text">Tipo: Restaurante</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+    </div>
+
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary"><i class='bx bx-heart'></i>Favoritar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- ========================= LISTAGEM DE ESTABELECIMENTOS ========================= -->
+ <div class="container my-5">
+    <h1 class="text-center fw-bold text-body-emphasis mb-4">Nossos Estabelecimentos</h1>
+
+    <div class="col-lg-6 mx-auto">
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
+            <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search"
+                   class="form-control px-4">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Exemplo de Estabelecimento 1 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (1).png" class="card-img-top" alt="Nome do Estabelecimento 1">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 1</h5>
+                    <p class="card-text">Tipo: Restaurante</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (13).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 2 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (13).png" class="card-img-top" alt="Nome do Estabelecimento 2">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 2</h5>
+                    <p class="card-text">Tipo: Bar</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Adicione mais estabelecimentos aqui -->
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (15).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 3 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (15).png" class="card-img-top" alt="Nome do Estabelecimento 3">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 3</h5>
+                    <p class="card-text">Tipo: Café</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (12).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 4 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (12).png" class="card-img-top" alt="Nome do Estabelecimento 4">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 4</h5>
+                    <p class="card-text">Tipo: Restaurante</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (2).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 5 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (2).png" class="card-img-top" alt="Nome do Estabelecimento 5">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                        <i class='bx bx-star-half'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 5</h5>
+                    <p class="card-text">Tipo: Bar</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=5" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (6).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 6 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (6).png" class="card-img-top" alt="Nome do Estabelecimento 6">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                        <i class='bx bx-star-half'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 6</h5>
+                    <p class="card-text">Tipo: Café</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=6" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (4).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 7 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (4).png" class="card-img-top" alt="Nome do Estabelecimento 7">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                        <i class='bx bx-star'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 7</h5>
+                    <p class="card-text">Tipo: Restaurante</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=7" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (11).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 8 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (11).png" class="card-img-top" alt="Nome do Estabelecimento 8">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 8</h5>
+                    <p class="card-text">Tipo: Bar</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=8" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
-            <!-- Exemplo de Estabelecimento 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="../assets/images/qd new (8).png" class="card-img-top" alt="Nome do Estabelecimento 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Estabelecimento 2</h5>
-                        <p class="card-text">Tipo: Bar</p>
-                        <p class="card-text">Localização: Luanda</p>
-                        <a href="detalhes-estabelecimento.html" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+        <!-- Exemplo de Estabelecimento 9 -->
+        <div class="col">
+            <div class="card">
+                <img src="../assets/images/qd new (8).png" class="card-img-top" alt="Nome do Estabelecimento 9">
+                <div class="card-body">
+                    <div class="rating">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
                     </div>
+                    <div class="favorite">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h5 class="card-title">Nome do Estabelecimento 9</h5>
+                    <p class="card-text">Tipo: Café</p>
+                    <p class="card-text">Localização: Luanda</p>
+                    <a href="detalhes-estabelecimento.html?id=9" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- ========================= RODAPE - Kino Angola ========================= -->
     <footer class="pt-5 px-3 bg-dark text-light">
@@ -263,7 +404,9 @@
 
 
     <!-- Scripts -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 </body>
 
 </html>
