@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Membro - Kino Angola</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../assets/images/logomarca/KINO DESIGN (1).png" type="image/x-icon">
+</head>
+
+<body>
+     <!-- ========================= CABEÇALHO ========================= -->
+     <header class="p-3 text-bg-dark sticky-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../assets/images/logomarca/KINO DESIGN (1).png" alt="Kino Angola" height="30">
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../index.html" class="nav-link px-2 text-white fw-medium">Início</a></li>
+                    <li><a href="estabelecimentos.html" class="nav-link px-2 text-white fw-medium">Estabelecimentos</a></li>
+                    <li><a href="sejamembro.html" class="nav-link px-2 text-white fw-medium">Seja Membro</a></li>
+                    <li><a href="contato.html" class="nav-link px-2 text-white fw-medium">Contatos</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white fw-medium">Sobre</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark" placeholder="Pesquisar..." aria-label="Search">
+                </form>
+                <div class="text-end">
+                    <a href="login.html" type="button" class="btn btn-outline-light me-2">Login</a>
+                    <a href="register.html" type="button" class="btn btn-primary">Sign-up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================= FORMULÁRIO SEJA MEMBRO ========================= -->
+    <div class="container my-5">
+        <h1 class="text-center fw-bold text-body-emphasis mb-4">Cadastro de Estabelecimento</h1>
+        <form action="processar-cadastro.php" method="post">
+            <div class="row g-4">
+                <!-- Dados do Estabelecimento -->
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="establishmentName" name="name" placeholder="Nome do Estabelecimento" required>
+                        <label for="establishmentName">Nome do Estabelecimento</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="establishmentDescription" name="description" placeholder="Descrição" required>
+                        <label for="establishmentDescription">Descrição</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="establishmentType" name="type" required>
+                            <option value="" disabled selected>Selecione o Tipo</option>
+                            <option value="restaurante">Restaurante</option>
+                            <option value="bar">Bar</option>
+                            <option value="café">Café</option>
+                            <option value="roulote">Roulote</option>
+                        </select>
+                        <label for="establishmentType">Tipo de Estabelecimento</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="establishmentLocation" name="location" placeholder="Localização (latitude, longitude)" required>
+                        <label for="establishmentLocation">Localização</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="priceRange" name="price_range" required>
+                            <option value="" disabled selected>Selecione a Faixa de Preço</option>
+                            <option value="barato">Barato</option>
+                            <option value="médio">Médio</option>
+                            <option value="caro">Caro</option>
+                        </select>
+                        <label for="priceRange">Faixa de Preço</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="openingHours" name="opening_hours" placeholder="Horário de Funcionamento" required>
+                        <label for="openingHours">Horário de Funcionamento</label>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="additionalInfo" name="additional_info" placeholder="Informações Adicionais" style="height: 100px;"></textarea>
+                        <label for="additionalInfo">Informações Adicionais</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary btn-lg">Cadastrar Estabelecimento</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ========================= RODAPÉ ========================= -->
+    <footer class="pt-5 px-3 bg-dark text-light">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Empresa</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Nossa História</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Missão e Visão</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Equipe</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Parcerias</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Ajuda</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Suporte ao Cliente</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Guia de Usuário</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Termos e Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Conecte-se</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Eventos</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Descontos e Promoções</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">
+                            <strong>kinoangolaoficial@gmail.com</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Inscreva a sua empresa no nosso <strong>site</strong></h5>
+                    <p>Envie-nos o seu e-mail para que possamos entrar em contato contigo</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
+                        <button class="btn btn-primary" type="submit">Inscrever</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 Kino Angola. Todos os direitos reservados.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

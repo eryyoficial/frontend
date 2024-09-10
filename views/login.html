@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kino Angola</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../assets/images/logomarca/KINO DESIGN (1).png" type="image/x-icon">
+</head>
+
+<body>
+     <!-- ========================= CABEÇALHO ========================= -->
+     <header class="p-3 text-bg-dark sticky-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../assets/images/logomarca/KINO DESIGN (1).png" alt="Kino Angola" height="30">
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../index.html" class="nav-link px-2 text-white fw-medium">Início</a></li>
+                    <li><a href="estabelecimentos.html" class="nav-link px-2 text-white fw-medium">Estabelecimentos</a></li>
+                    <li><a href="sejamembro.html" class="nav-link px-2 text-white fw-medium">Seja Membro</a></li>
+                    <li><a href="contato.html" class="nav-link px-2 text-white fw-medium">Contatos</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white fw-medium">Sobre</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark" placeholder="Pesquisar..." aria-label="Search">
+                </form>
+                <div class="text-end">
+                    <a href="login.html" type="button" class="btn btn-outline-light me-2">Login</a>
+                    <a href="register.html" type="button" class="btn btn-primary">Sign-up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================= FORMULÁRIO DE LOGIN ========================= -->
+    <div class="container my-5">
+        <h1 class="text-center fw-bold text-body-emphasis mb-4">Login</h1>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
+                    <label for="floatingInput">Endereço de Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                    <label for="floatingPassword">Senha</label>
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Lembrar-me
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+                <hr class="my-4">
+                <a href="register.html" class="nav-link"><small class="text-primary">Não tenho uma conta.</small></a>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================= RODAPÉ ========================= -->
+    <footer class="pt-5 px-3 bg-dark text-light">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Empresa</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Nossa História</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Missão e Visão</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Equipe</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Parcerias</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Ajuda</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Suporte ao Cliente</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Guia de Usuário</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Termos e Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Conecte-se</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Eventos</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Descontos e Promoções</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">
+                            <strong>kinoangolaoficial@gmail.com</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Inscreva-se para receber atualizações</h5>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
+                        <button class="btn btn-primary" type="submit">Inscrever</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 Kino Angola. Todos os direitos reservados.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

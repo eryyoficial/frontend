@@ -43,6 +43,155 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="container px-4 py-5" id="icon-grid">
+                        <h2 class="pb-2 border-bottom text-center">Serviços</h2>
+                    
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 py-5">
+                          <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><i class='bx bx-food-menu service_icon'></i></svg>
+                            <div>
+                              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Variedade Gastronômica</h3>
+                              <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências gastronômicas exclusivas.</p>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><i class='bx bx-box service_icon'></i></svg>
+                            <div>
+                              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Peça e Receba em Casa</h3>
+                              <p>Faça seus pedidos online e receba no conforto da sua casa, com entrega rápida e eficiente.</p>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><i class='bx bx-wallet service_icon'></i></svg>
+                            <div>
+                              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Pagamentos Seguros</h3>
+                              <p>Realize pagamentos de forma segura e prática com diversas opções de pagamento e um sistema robusto de segurança.</p>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><i class='bx bx-planet service_icon'></i></svg>
+                            <div>
+                              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Maior Visibilidade Online</h3>
+                              <p>Tenha seu negócio destacado em uma plataforma amplamente acessada, aumentando a visibilidade e atraindo novos clientes.</p>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><i class='bx bx-cube service_icon'></i></svg>
+                            <div>
+                              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gerenciamento Simplificado</h3>
+                              <p>Atualize informações, cardápios e preços facilmente, e mantenha o controle total sobre o seu perfil e ofertas.</p>
+                            </div>
+                          </div>
+                          <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><i class='bx bx-support service_icon'></i></svg>
+                            <div>
+                              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Suporte Dedicado</h3>
+                              <p>Receba assistência especializada para resolver problemas e otimizar a presença do seu negócio na plataforma.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+                       <!-- ========================= SERVIÇOS ========================= -->
+    <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom text-center">Serviços</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+            <!-- Serviço 1 -->
+            <div class="col d-flex align-items-start">
+                <div class="service-item d-flex flex-column align-items-center p-2">
+                    <div class="service-icon mb-3"><i class='bx bx-food-menu service_icon'></i></div>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Variedade Gastronômica</h3>
+                        <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências gastronômicas exclusivas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviço 2 -->
+            <div class="col d-flex align-items-start">
+                <div class="service-item d-flex flex-column align-items-center p-2">
+                    <div class="service-icon mb-3"><i class='bx bx-box service_icon'></i></div>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Peça e Receba em Casa</h3>
+                        <p>Faça seus pedidos online e receba no conforto da sua casa, com entrega rápida e eficiente.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviço 3 -->
+            <div class="col d-flex align-items-start">
+                <div class="service-item d-flex flex-column align-items-center p-2">
+                    <div class="service-icon mb-3"><i class='bx bx-wallet service_icon'></i></div>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Pagamentos Seguros</h3>
+                        <p>Realize pagamentos de forma segura e prática com diversas opções de pagamento e um sistema robusto de segurança.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviço 4 -->
+            <div class="col d-flex align-items-start">
+                <div class="service-item d-flex flex-column align-items-center p-2">
+                    <div class="service-icon mb-3"><i class='bx bx-planet service_icon'></i></div>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Maior Visibilidade Online</h3>
+                        <p>Tenha seu negócio destacado em uma plataforma amplamente acessada, aumentando a visibilidade e atraindo novos clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviço 5 -->
+            <div class="col d-flex align-items-start">
+                <div class="service-item d-flex flex-column align-items-center p-2">
+                    <div class="service-icon mb-3"><i class='bx bx-cube service_icon'></i></div>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gerenciamento Simplificado</h3>
+                        <p>Atualize informações, cardápios e preços facilmente, e mantenha o controle total sobre o seu perfil e ofertas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviço 6 -->
+            <div class="col d-flex align-items-start">
+                <div class="service-item d-flex flex-column align-items-center p-2">
+                    <div class="service-icon mb-3"><i class='bx bx-support service_icon'></i></div>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Suporte Dedicado</h3>
+                        <p>Receba assistência especializada para resolver problemas e otimizar a presença do seu negócio na plataforma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
                     <!DOCTYPE html>
 <html lang="pt">
 
