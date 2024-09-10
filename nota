@@ -1,0 +1,198 @@
+
+                    <!-- Estabelecimento 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Bistrô Elegante</h5>
+                                <p class="card-text">Experimente pratos refinados e uma seleção sofisticada de coquetéis
+                                    em um ambiente requintado.</p>
+                                <p class="card-text"><strong>Avaliação:</strong> 4.6/5</p>
+                                <a href="link-para-estabelecimento4" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Estabelecimento 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Tempero do Oriente</h5>
+                                <p class="card-text">Saboreie pratos autênticos da culinária asiática com um toque
+                                    especial e ingredientes frescos.</p>
+                                <p class="card-text"><strong>Avaliação:</strong> 4.5/5</p>
+                                <a href="link-para-estabelecimento5" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino Angola</title>
+
+    <!-- Consolidado e otimizado -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/images/logomarca/KINO-DESIGN.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- ========================= CABEÇALHO ========================= -->
+    <header class="p-3 text-bg-dark sticky-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="assets/images/logomarca/KINO-DESIGN.png" alt="Kino Angola" width="40" height="32">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white fw-medium">Início</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white fw-medium">Estabelecimentos</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white fw-medium">Seja Membro</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white fw-medium">Contatos</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white fw-medium">Sobre</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark" placeholder="Pesquisar..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================= CARROSSEL HERO ========================= -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/back-1.png" class="d-block w-100" alt="Bem-vindo à Kino Angola">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="container">
+                        <h1 class="text-center">Bem-vindo à <strong>Kino Angola</strong></h1>
+                        <p class="text-center">Encontre os melhores restaurantes, bares, e roulotes de Angola <strong><a class="text-primary" href="#">aqui</a></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/back-2.png" class="d-block w-100" alt="Primeiro slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Primeiro slide</h5>
+                    <p>Conteúdo representativo para o primeiro slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/back-3.png" class="d-block w-100" alt="Segundo slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Segundo slide</h5>
+                    <p>Conteúdo representativo para o segundo slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ========================= BUSCA RÁPIDA ========================= -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1 class="text-center fw-bold text-body-emphasis">Encontre o Seu Próximo Destino de Lazer</h1>
+        <div class="col-lg-6 mx-auto">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
+                <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search" class="form-control px-4">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+            </div>
+        </div>
+
+        <div class="row align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/images/qd-1.png" class="d-block mx-lg-auto img-fluid" alt="Explorar Locais em Luanda" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Explore Novas Experiências em Luanda</h1>
+                <p class="lead">Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento. Com a Kino Angola, suas opções são infinitas.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver Estabelecimentos</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= SERVIÇOS ========================= -->
+    <div class="p-5 text-center services">
+        <h1 class="text-center fw-bold text-body-emphasis">Serviços</h1>
+        <div class="mx-auto d-flex flex-wrap justify-content-center mt-5">
+            <!-- Serviço 1 -->
+            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+                <div class="service-icon mb-3"><i class='bx bx-food-menu service_icon'></i></div>
+                <h4>Variedade Gastronômica</h4>
+                <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências gastronômicas exclusivas.</p>
+            </div>
+            <!-- Serviço 2 -->
+            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+                <div class="service-icon mb-3"><i class='bx bx-box service_icon'></i></div>
+                <h4>Peça e Receba em Casa</h4>
+                <p>Faça seus pedidos online e receba no conforto da sua casa, com a conveniência de uma entrega rápida e segura.</p>
+            </div>
+            <!-- Serviço 3 -->
+            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+                <div class="service-icon mb-3"><i class='bx bx-wallet service_icon'></i></div>
+                <h4>Pagamentos Seguros</h4>
+                <p>Realize pagamentos de forma segura e prática com diversas opções de pagamento e um sistema robusto de segurança.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 Kino Angola. Todos os direitos reservados.</p>
+            <p>
+                <a href="#" class="text-light text-decoration-none">Termos de Serviço</a> | 
+                <a href="#" class="text-light text-decoration-none">Política de Privacidade</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
