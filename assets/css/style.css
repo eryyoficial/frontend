@@ -67,7 +67,10 @@ header {
     text-decoration: none;
 }
 
-
+.icon_extras{
+    display: inline-block;
+    font-size: var(--font-size-medium);
+}
 
 
 
@@ -387,6 +390,10 @@ footer {
         background-color: rgb(25, 25, 25);
     }
 
+    .logo{
+        margin-left: 200px;
+    }
+
 
     .extras_btn {
         display: none;
@@ -403,6 +410,10 @@ footer {
     .top_esta .mb-4 {
         padding: 2rem 10rem;
         flex: 1 calc(85% - 100px);
+    }
+
+    .extras_btn_apply{
+        width: 50%;
     }
 
 }
@@ -425,6 +436,11 @@ footer {
     .top_esta .mb-4 {
         padding: 2rem 7rem;
         flex: 1 calc(85% - 100px);
+    }
+    
+    
+    .logo{
+        margin-left: 0;
     }
 }
 
