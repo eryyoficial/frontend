@@ -11,8 +11,11 @@ html {
 }
 
 body {
-    background-color: cadetblue;
     font-family: "Lato", sans-serif;
+}
+
+header{
+    padding: 1rem 2rem;
 }
 
 .back-cinza {
@@ -32,6 +35,7 @@ body {
 }
 
 .nav_link {
+    font-size: .93rem;
     text-decoration: none;
 }
 
@@ -80,7 +84,7 @@ body {
 
 .card_list .card_item .card_link {
     user-select: none;
-    margin: 0.4rem;
+    margin: 0.2rem;
     display: block;
     padding: 18px;
     text-decoration: none;
@@ -195,7 +199,7 @@ footer {
 
 
 .nav_menu {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     color: white;
 }
 
@@ -223,7 +227,39 @@ footer {
     text-decoration: none;
 }
 
+
+
+@media (max-width: 1400px) {
+    
+.menudiv{
+    flex-direction: row;
+    padding: 0;
+}
+.form-control{
+    width: 200px;
+}
+
+
+.nav_item {
+    list-style: none;
+    margin: 0px 1rem;
+}
+}
+
+@media (max-width: 1024px) {
+    .menudiv{
+        padding: 0;
+    }
+    .nav_item{
+        margin: 0 .6rem;
+    }
+  
+    }
+
 @media (max-width: 952px) {
+    header{
+        padding: 0.5rem .3rem;
+    }
     a.logo {
         font-size: 30px;
     }
@@ -233,7 +269,7 @@ footer {
     }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 993px) {
     .checkbtn {
         display: block;
         margin-right: 12rem;
@@ -245,7 +281,7 @@ footer {
         width: 100%;
         height: 100vh;
         background-color: rgb(33, 33, 33);
-        top: 70px;
+        top: 60px;
         left: -100%;
         text-align: center;
         transition: all .4s;
