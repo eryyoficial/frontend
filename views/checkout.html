@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Kino Angola</title>
+    <title>Checkout - Kino Angola</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Inclua seu próprio arquivo de estilos aqui -->
 </head>
@@ -20,9 +20,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                             <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="checkout.html">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -32,21 +32,31 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <h2>Sobre a Kino Angola</h2>
-        <p>A Kino Angola é uma plataforma digital inovadora que conecta usuários a restaurantes, bares e locais de lazer em Luanda. Nossa missão é facilitar a descoberta de estabelecimentos com base em preferências de preço, localização e serviços, oferecendo uma experiência personalizada e prática para nossos usuários.</p>
-
-        <h3>Missão</h3>
-        <p>Conectar pessoas a experiências gastronômicas únicas e promover o crescimento de negócios locais em Luanda.</p>
-
-        <h3>Visão</h3>
-        <p>Ser a principal plataforma de escolha para quem busca experiências culinárias e de lazer em Angola.</p>
-
-        <h3>Valores</h3>
-        <ul>
-            <li>Inovação e tecnologia.</li>
-            <li>Qualidade e compromisso com o cliente.</li>
-            <li>Transparência e confiança.</li>
-        </ul>
+        <h2>Finalizar Compra</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Digite seu endereço" required>
+            </div>
+            <div class="mb-3">
+                <label for="payment" class="form-label">Método de Pagamento</label>
+                <select class="form-select" id="payment" required>
+                    <option value="credit">Cartão de Crédito</option>
+                    <option value="debit">Cartão de Débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mobile">Pagamento Móvel</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+        </form>
     </main>
 
     <!-- Footer -->

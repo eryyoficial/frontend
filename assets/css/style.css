@@ -9,6 +9,23 @@
     --font-size-small: .95em;
     --font-size-smaller: .25em;
 
+
+    --color-red-primary: #E50000;
+    --color-red-secondary: #AA1111;
+    --color-yellow-secondary: #F6BF4F;
+    --color-yellow-third: #F9D276;
+    --color-yellow-primary: #FB9D03;
+    --color-dark-primary: #212529;
+    --color-gray-primary: #212529;
+    --color-light: #F2F2F2;
+    --color-white: #fff;
+
+
+    --shadowbox: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+    
+
+
 }
 
 
@@ -41,6 +58,14 @@ body {
 
 header {
     padding: 1rem 2rem;
+}
+
+h1{
+    font-size: var(--font-size-big);
+}
+
+h2{
+    font-size: var(--font-size-large);
 }
 
 .back-cinza {
@@ -157,7 +182,7 @@ header {
     text-decoration: none;
     background: #746767;
     border-radius: 12px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadowbox);
     border: 1px solid transparent;
     transition: .4s;
 }
