@@ -1,4 +1,32 @@
 
+//SWIPER JF
+new Swiper('.card-wrapper', {
+    loop: true,
+    scapeBetween: 30,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints:{
+        0:{
+            slidesPerView: 1
+        },
+        768:{
+            slidesPerView: 2
+        },
+        1024:{
+            slidesPerView: 3
+        },
+    }
+  });
+
 
 
 // MODAL 
@@ -8,7 +36,6 @@ const myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
-
 
 
 // Animações ao rolar a página

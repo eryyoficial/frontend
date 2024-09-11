@@ -34,6 +34,31 @@
 
 
 
+                    
+    <!-- ========================= CABEÇALHO ========================= -->
+    <header class="py-3 px-5 text-bg-dark sticky-top">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="../assets/images/logomarca/KINO DESIGN (1).png" alt="Kino Angola" height="30">
+            </a>
+            <ul class="nav m-auto justify-content-center mb-md-0">
+                <li><a href="../index.html" class="nav-link px-2 text-white fw-medium">Início</a></li>
+                <li><a href="estabelecimentos.html" class="nav-link px-2 text-white fw-medium">Estabelecimentos</a></li>
+                <li><a href="sejamembro.html" class="nav-link px-2 text-white fw-medium">Seja Membro</a></li>
+                <li><a href="contato.html" class="nav-link px-2 text-white fw-medium">Contatos</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white fw-medium">Sobre</a></li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark" placeholder="Pesquisar..." aria-label="Search">
+            </form>
+            <div class="text-end">
+                <a href="login.html" type="button" class="btn btn-outline-light me-2">Login</a>
+                <a href="register.html" type="button" class="btn btn-primary">Sign-up</a>
+            </div>
+    </div>
+</header>
+
+
 
 
 
