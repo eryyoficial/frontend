@@ -35,7 +35,7 @@
                 <li class="nav_item"><a href="views/about.html" class="nav_link">Sobre</a></li>
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 extras_btn" role="search">
-                <input type="search" class="form-control form-control-dark" placeholder="Pesquisar..."
+                <input type="search" class="form-control form-control-dark form_control" placeholder="Pesquisar..."
                     aria-label="Search">
             </form>
             <div class="text-end extras_btn">
@@ -133,42 +133,42 @@
     <div class="p-5 text-center services">
         <h1 class="text-center fw-bold text-body-emphasis">Serviços</h1>
         <!-- ========================= SERVIÇOS ========================= -->
-        <div class="mx-auto d-flex flex-wrap justify-content-center mt-5">
+        <div class="mx-auto mt-5 grid_services">
             <!-- Serviço 1 -->
-            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+            <div class="service-item">
                 <div class="service-icon mb-3"><i class='bx bx-food-menu service_icon'></i></div>
                 <h4>Variedade Gastronômica</h4>
                 <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências
                     gastronômicas exclusivas.</p>
             </div>
             <!-- Serviço 2 -->
-            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+            <div class="service-item">
                 <div class="service-icon mb-3"><i class='bx bx-box service_icon'></i></div>
                 <h4>Peça e Receba em Casa</h4>
                 <p>Faça seus pedidos online e receba no conforto da sua casa, com entrega rápida e eficiente.</p>
             </div>
             <!-- Serviço 3 -->
-            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+            <div class="service-item">
                 <div class="service-icon mb-3"><i class='bx bx-wallet service_icon'></i></div>
                 <h4>Pagamentos Seguros</h4>
                 <p>Realize pagamentos de forma segura e prática com diversas opções de pagamento e um sistema robusto de segurança.</p>
             </div>
             <!-- Serviço 4 -->
-            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+            <div class="service-item">
                 <div class="service-icon mb-3"><i class='bx bx-planet service_icon'></i></div>
                 <h4>Maior Visibilidade Online</h4>
                 <p>Tenha seu negócio destacado em uma plataforma amplamente acessada, aumentando a visibilidade e
                     atraindo novos clientes.</p>
             </div>
             <!-- Serviço 5 -->
-            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+            <div class="service-item">
                 <div class="service-icon mb-3"><i class='bx bx-cube service_icon'></i></div>
                 <h4>Gerenciamento Simplificado</h4>
                 <p>Atualize informações, cardápios e preços facilmente, e mantenha o controle total sobre o seu
                     perfil e ofertas.</p>
             </div>
             <!-- Serviço 6 -->
-            <div class="service-item d-flex flex-column align-items-center p-2" style="width: 30%;">
+            <div class="service-item">
                 <div class="service-icon mb-3"><i class='bx bx-support service_icon'></i></div>
                 <h4>Suporte Dedicado</h4>
                 <p>Receba assistência especializada para resolver problemas e otimizar a presença do seu negócio na
@@ -193,29 +193,36 @@
 
 
     <!-- ========================= BANNER 3 ========================= -->
-    <div class="row py-2 container mx-auto">
+    <div class="py-2 container mx-auto pai_estabeleciment">
         <div style="flex-direction: column; gap: 0 2rem"
-            class="col-md-4  d-flex justify-content-center align-items-center my-3">
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
             <h2>Bares</h2>
             <p>Encontre bares incríveis para se divertir.</p>
 
-            <img style="width: 300px;" src="assets/images/qd (12).png" alt="imagem rest" srcset="">
+            <img class="img_estabelciment" src="assets/images/qd (12).png" alt="imagem rest" srcset="">
 
         </div>
         <div style="flex-direction: column; gap: 0 2rem"
-            class="col-md-4  d-flex justify-content-center align-items-center my-3">
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
+            <h2>Churrascaria </h2>
+            <p>Explore opções de grelhados deliciosos de rua.</p>
+
+            <img class="img_estabelciment" src="assets/images/qd (13).png" alt="imagem rest" srcset="">
+
+        </div>
+        <div style="flex-direction: column; gap: 0 2rem"
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
             <h2>Roulotes</h2>
-            <p>Explore opções de comida de rua deliciosas.</p>
+            <p>Sabores autênticos na palma da mão. </p>
 
-            <img style="width: 300px;" src="assets/images/qd (13).png" alt="imagem rest" srcset="">
-
+            <img class="img_estabelciment" src="assets/images/qd new (1).png" alt="imagem rest" srcset="">
         </div>
         <div style="flex-direction: column; gap: 0 2rem"
-            class="col-md-4  d-flex justify-content-center align-items-center my-3">
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
             <h2>Restaurantes</h2>
             <p>Descubra os melhores restaurantes na cidade.</p>
 
-            <img style="width: 300px;" src="assets/images/qd (11).png" alt="imagem rest" srcset="">
+            <img class="img_estabelciment" src="assets/images/qd (11).png" alt="imagem rest" srcset="">
         </div>
     </div>
 
@@ -225,7 +232,7 @@
         <h1 class="text-center fw-bold text-body-emphasis">Top 3 Estabelecimentos com Maiores Avaliações</h1>
         <!-- ========================= TOP 3 MELHORES ESTABELECIMENTOS ========================= -->
         <div class="container my-5">
-            <div class="row">
+            <div class="row top_esta">
                 <!-- Estabelecimento 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">

@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root {
+    --font-size-biggest: 4em;
+    --font-size-big: 2.5em;
+    --font-size-large: 1.75em;
+    --font-size-medium: 1.15em;
+    --font-size-normal: 1em;
+    --font-size-small: .95em;
+    --font-size-smaller: .25em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -11,10 +35,11 @@ html {
 }
 
 body {
+    font-size: 16px;
     font-family: "Lato", sans-serif;
 }
 
-header{
+header {
     padding: 1rem 2rem;
 }
 
@@ -26,16 +51,19 @@ header{
 
 /*===================================================== HEADER ===================================================== */
 .nav_list {
+    cursor: pointer;
     display: flex;
     list-style: none;
 }
 
 .nav_item {
     list-style: none;
+    margin: 0 .1rem;
 }
 
 .nav_link {
-    font-size: .93rem;
+    font-size: var(--font-size-normal);
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -70,9 +98,45 @@ header{
 }
 
 .service_icon {
-    font-size: 70px;
+    font-size: var(--font-size-biggest);
 }
 
+
+
+
+
+
+
+
+
+
+
+/*===================================================== SERVICES ===================================================== */
+.grid_services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+
+
+.pai_estabeleciment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.img_estabelciment {
+    width: 100%;
+}
+
+.card_estabeleciment {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+}
 
 
 
@@ -112,19 +176,18 @@ header{
 }
 
 .card_list .card_link .card_title {
-    color: black;
+    color: white;
     padding: 8px 16px;
-    font-size: .95rem;
+    font-size: var(--font-size-medium);
     font-weight: 500;
     margin: 16px 0px 18px;
     background-color: #612c2c;
     width: fit-content;
     border-radius: 50px;
-    border: 2px solid white;
 }
 
 .card_list .card_link .card_text {
-    font-size: 1.19rem;
+    font-size: var(--font-size-normal);
     font-weight: 400;
     color: black;
 
@@ -134,7 +197,7 @@ header{
 .card_list .card_link .card_btn {
     color: white;
     padding: 0 1rem;
-    font-size: 1.4rem;
+    font-size: var(--font-size-medium);
     font-weight: 700;
     background-color: #612c2c;
     width: fit-content;
@@ -162,7 +225,7 @@ header{
 
 .card-wrapper .swiper-slide-button {
     color: white;
-    font-size: 2px;
+    font-size: var(--font-size-normal);
     border-radius: 50px;
     opacity: .5;
     transition: .4s;
@@ -199,7 +262,7 @@ footer {
 
 
 .nav_menu {
-    font-size: 2.6rem;
+    font-size: var(--font-size-big);
     color: white;
 }
 
@@ -229,47 +292,65 @@ footer {
 
 
 
-@media (max-width: 1400px) {
-    
-.menudiv{
-    flex-direction: row;
-    padding: 0;
-}
-.form-control{
-    width: 200px;
-}
+@media (max-width: 1440px) {
 
-
-.nav_item {
-    list-style: none;
-    margin: 0px 1rem;
-}
-}
-
-@media (max-width: 1024px) {
-    .menudiv{
+    .menudiv {
+        flex-direction: row;
         padding: 0;
     }
-    .nav_item{
-        margin: 0 .6rem;
-    }
-  
+
+    .form_control {
+        width: 200px;
     }
 
-@media (max-width: 952px) {
-    header{
-        padding: 0.5rem .3rem;
-    }
-    a.logo {
-        font-size: 30px;
-    }
 
-    .nav_link {
-        font-size: 16px;
+    .nav_item {
+        list-style: none;
+        margin: 0px 1rem;
     }
 }
 
-@media (max-width: 993px) {
+
+
+
+@media screen and (max-width: 1240px) {
+
+    .service-item {
+        margin: 1rem 1rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .menudiv {
+        padding: 0;
+    }
+
+    .nav_item {
+        margin: 0 .6rem;
+    }
+
+    .pai_estabeleciment {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top_esta {
+        flex-wrap: wrap;
+    }
+
+    .top_esta .mb-4 {
+        flex: 1 1 calc(30% - 10px);
+        display: flex;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 999px) {
     .checkbtn {
         display: block;
         margin-right: 12rem;
@@ -297,9 +378,9 @@ footer {
     }
 
     .nav_link {
-        font-size: 1.4rem;
         font-weight: 600;
         transition: .4s;
+        font-size: var(--font-size-medium);
     }
 
     .nav_item:hover {
@@ -311,11 +392,48 @@ footer {
         display: none;
     }
 
-    #check:checked ~ .nav_list{
+    #check:checked~.nav_list {
         left: 0;
     }
 
+    .grid_services {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .top_esta .mb-4 {
+        padding: 2rem 10rem;
+        flex: 1 calc(85% - 100px);
+    }
+
 }
+
+
+
+
+@media (max-width: 978px) {
+    header {
+        padding: 0.5rem .3rem;
+    }
+
+    a.logo {
+        font-size: var(--font-size-large);
+    }
+
+    .nav_link {
+        font-size: var(--font-size-normal);
+    }
+    .top_esta .mb-4 {
+        padding: 2rem 7rem;
+        flex: 1 calc(85% - 100px);
+    }
+}
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -324,4 +442,27 @@ footer {
 
     }
 
+
+    .grid_services {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+
+    }
+
+    .service-item {
+        margin: 1rem;
+    }
+    
+    .top_esta .mb-4 {
+        padding: 0 3rem;
+        flex: 1 calc(85% - 100px);
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .top_esta .mb-4 {
+        padding: .4rem;
+        flex: 1 calc(85% - 100px);
+    }
 }
