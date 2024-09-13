@@ -60,3 +60,7 @@ function animateOnScroll(elementSelector, animationClass) {
     observer.observe(element);
 }
 
+
+
+
+
