@@ -137,25 +137,29 @@ a {
         transition: left .4s;
     }
 
-    .nav_item{
+    .nav_item {
         transform: translateX(-150px);
         visibility: hidden;
         transition: transform .4s ease-out, visibitily .4s;
     }
 
-    .nav_item:nth-child(1){
+    .nav_item:nth-child(1) {
         transition-delay: .08s;
     }
-    .nav_item:nth-child(2){
+
+    .nav_item:nth-child(2) {
         transition-delay: .13s;
     }
-    .nav_item:nth-child(3){
+
+    .nav_item:nth-child(3) {
         transition-delay: .18s;
     }
-    .nav_item:nth-child(4){
+
+    .nav_item:nth-child(4) {
         transition-delay: .23s;
     }
-    .nav_item:nth-child(5){
+
+    .nav_item:nth-child(5) {
         transition-delay: .28s;
     }
 }
@@ -166,12 +170,12 @@ a {
     display: flex;
 }
 
-.nav_list{
+.nav_list {
     flex-direction: column;
     row-gap: 3rem;
 }
 
-.nav_link{
+.nav_link {
     position: relative;
     color: var(--white-color);
     font-size: var(--big-font-size);
@@ -181,11 +185,11 @@ a {
     transition: opacity .4s;
 }
 
-.nav_link:hover span{
+.nav_link:hover span {
     margin-left: 1.7rem;
 }
 
-.nav_link i{
+.nav_link i {
     font-weight: var(--normal-weight);
     font-size: var(--big-font-size);
     position: absolute;
@@ -194,17 +198,17 @@ a {
     transition: opacity .4s, visibility .4s;
 }
 
-.nav_link:hover i{
+.nav_link:hover i {
     opacity: 1;
     visibility: visible;
 }
 
-.nav_link span{
+.nav_link span {
     position: relative;
     transition: margin .4s;
 }
 
-.nav_link span::after{
+.nav_link span::after {
     content: '';
     position: absolute;
     left: 0;
@@ -215,15 +219,15 @@ a {
     transition: width .4s ease-out;
 }
 
-.nav_link:hover span::after{
+.nav_link:hover span::after {
     width: 100%;
 }
 
-.nav_list:has(.nav_link:hover) .nav_link:not(:hover){
+.nav_list:has(.nav_link:hover) .nav_link:not(:hover) {
     opacity: .4s;
 }
 
-.nav_close{
+.nav_close {
     font-weight: var(--normal-weight);
     font-size: var(--big-font-size);
     position: absolute;
@@ -231,67 +235,106 @@ a {
     right: 1.5rem;
 }
 
-.nav_extras{
+.nav_extras {
     column-gap: 1rem;
 }
 
-.nav_extras_link{
+.nav_extras_link {
     color: var(--white-color);
     font-size: var(--big-font-size);
     transition: transform .4s;
 }
 
-.nav_extras_link:hover{
+.nav_extras_link:hover {
     transform: translateY(-.25rem);
 }
+
 /* ================================= HEADER ================================= */
-.show-menu{
+.show-menu {
     left: 0;
 }
 
-.show-menu .nav_item{
+.show-menu .nav_item {
     visibility: visible;
     transform: translateX(0);
 }
 
 
-@media screen and (min-width: 1150px){
-    .contentor{
+@media screen and (min-width: 1150px) {
+    .search_op{
+        display: none;
+    }
+    .contentor {
         margin-inline: auto;
     }
 
-    .nav_container{
+    .nav_container {
         height: calc(--header-height) + 2rem;
     }
 
-    .nav_toggle, .nav_close{
+    .nav_toggle,
+    .nav_close {
         display: none;
     }
-    .nav_link{
-        font-size: var(--large-font-size);
+
+    .nav_link {
+        font-size: var(--normal-font-size);
     }
 
-    .nav_link i{
+    .nav_link i {
         font-weight: var(--normal-weight);
         font-size: var(--large-font-size);
     }
-    
-.nav_link:hover span{
-    margin-left: 1.5rem;
-}
 
-    .nav_list{
+    .nav_link:hover span {
+        margin-left: 1.5rem;
+    }
+
+    .nav_list {
         flex-direction: row;
         column-gap: 2.5rem;
     }
 
-    .nav_menu{
+    .nav_menu {
         display: flex;
         align-items: center;
         column-gap: 3.5rem;
     }
 }
-/* ================================= HEADER ================================= */
+
+
+
+/* ================================= SEARCH ================================= */
+.nav_extras form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_btn {
+    color: gray;
+    margin-left: 5rem;
+    padding: .4rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid var(--black-color);
+    transition: outline 1s;
+}
+
+.search_link{
+    color: var(--white-color);
+    font-size: var(--big-font-size);
+    font-weight: var(--normal-weight);
+    transition: .4s;
+}
+
+.search_link:hover{
+    color: rgb(141, 141, 141);
+}
+
+.search_btn:hover{
+    border: 2px solid rgb(112, 166, 228);
+}
+
 /* ================================= HEADER ================================= */
 /* ================================= HEADER ================================= */
 /* ================================= HEADER ================================= */

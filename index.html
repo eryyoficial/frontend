@@ -16,41 +16,34 @@
 </head>
 
 <body>
-
-    <?php
-        require_once __DIR__ . '/views/layouts/header.html'
-    ?>
-    <!-- ========================= CABEÇALHO ========================= 
-    <header class="text-bg-dark sticky-top">
-        <div class="d-flex align-items-center justify-content-around menudiv">
+    <!-- ========================= CABEÇALHO ========================= -->
+    <header class="text-bg-light sticky-top">
+        <div class="d-flex align-items-center justify-content-between menudiv">
             <input type="checkbox" name="check" id="check">
             <label for="check" class="checkbtn">
-                <i class='bx bx-menu nav_menu'></i>
+                <i class='bx bx-menu nav_menu text-dark'></i>
             </label>
-
-            <a href="index.html" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center mb-2 mb-lg-0 text-dark text-decoration-none">
                 <img src="assets/images/logomarca/KINO DESIGN (1).png" alt="Kino Angola" height="30">
+                <h2 class="my-0 mx-1 d-flex align-items-center justify-content-center fw-semibold" style="font-size: 1.3em;">Kino Angola</h2>
             </a>
             <ul class="nav m-auto justify-content-center nav_list">
-                <li class="nav_item"><a href="index.html" class="nav_link">Início</a></li>
-                <li class="nav_item"><a href="views/estabelecimentos.html" class="nav_link">Estabelecimentos</a></li>
-                <li class="nav_item"><a href="views/sejamembro.html" class="nav_link">Seja Membro</a></li>
-                <li class="nav_item"><a href="views/contato.html" class="nav_link">Contatos</a></li>
-                <li class="nav_item"><a href="views/about.html" class="nav_link">Sobre</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_link text-dark ">Início</a></li>
+                <li class="nav_item"><a href="views/estabelecimentos.html" class="nav_link text-dark ">Estabelecimentos</a></li>
+                <li class="nav_item"><a href="views/sejamembro.html" class="nav_link text-dark ">Seja Membro</a></li>
+                <li class="nav_item"><a href="views/contact.html" class="nav_link text-dark ">Contatos</a></li>
+                <li class="nav_item"><a href="views/about.html" class="nav_link text-dark ">Sobre</a></li>
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 extras_btn" role="search">
                 <input type="search" class="form-control form-control-dark form_control" placeholder="Pesquisar..."
                     aria-label="Search">
             </form>
-            <div class="extras_btn_apply"></div>
-            <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-heart icon_extras'></i></a>
-            <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-user icon_extras'></i></a>
-            <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-cart-alt icon_extras'></i></a>
-        </div>
+            <div class="text-end extras_btn">
+                <a href="views/login.html" type="button" class="text-success btn btn-outline-success me-2">Login</a>
+                <a href="views/register.html" type="button" class="text-success btn btn-outline-success ">Sign-up</a>
+            </div>
         </div>
     </header>
--->
-
 
 
     <!-- ========================= CARROSSEL HERO ========================= -->
@@ -68,7 +61,7 @@
                     <div class="carousel-caption">
                         <h1>Bem-vindo à Kino Angola</h1>
                         <p class="opacity-75">Encontre os melhores restaurantes, bares, e roulotes da nossa banda</p>
-                        <p><a class="btn btn-lg btn-primary" href="#searchfilter">Explorar Agora</a></p>
+                        <p><a class="botao_principal text-white" href="#searchfilter">Explorar Agora</a></p>
                     </div>
                 </div>
             </div>
@@ -77,7 +70,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Gastronomia Cultural</h1>
-                        <p>Sua Aventura Gastronômica Começa <a class="btn btn-primary" href="views/estabelecimentos.html#cultural">Aqui</a></p>
+                        <p>Sua Aventura Gastronômica Começa <a class="botao_principal text-white" href="views/estabelecimentos.html#cultural">Aqui</a></p>
 
                     </div>
                 </div>
@@ -87,7 +80,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h2>Encontre os melhores restaurantes <br> e locais de lazer ao seu redor.</h2>
-                        <p><a class="btn btn-lg btn-primary" href="views/estabelecimentos.html">Visitar Estabelecimentos</a></p>
+                        <p><a class="botao_principal text-white" href="views/estabelecimentos.html">Visitar Estabelecimentos</a></p>
                     </div>
                 </div>
             </div>
@@ -111,7 +104,7 @@
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
                 <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search"
                     class="form-control px-4">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+                <button type="button" class="botao_principal btn-lg px-4 me-sm-3 text-white">Pesquisar</button>
             </div>
         </div>
 
@@ -124,8 +117,8 @@
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Explore Novas Experiências em Luanda</h1>
                 <p class="lead">Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento. Com a Kino Angola, suas opções são infinitas.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver Estabelecimentos</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Criar Conta</button>
+                    <button type="button" class="botao_principal btn-lg px-4 me-md-2 text-white">Ver Estabelecimentos</button>
+                    <button type="button" class="botao_principal px-4 text-white">Criar Conta</button>
                 </div>
             </div>
         </div>
@@ -247,7 +240,7 @@
                             <p class="card-text">Descubra o melhor da cozinha italiana com pratos autênticos e uma
                                 seleção de vinhos premiados.</p>
                             <p class="card-text"><strong>Avaliação:</strong> 4.9/5</p>
-                            <a href="link-para-estabelecimento1" class="btn btn-primary">Saiba Mais</a>
+                            <a href="link-para-estabelecimento1" class="botao_principal text-white">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +253,7 @@
                             <p class="card-text">Um espaço acolhedor com cafés especiais e uma atmosfera relaxante
                                 para todos os momentos do dia.</p>
                             <p class="card-text"><strong>Avaliação:</strong> 4.8/5</p>
-                            <a href="link-para-estabelecimento2" class="btn btn-primary">Saiba Mais</a>
+                            <a href="link-para-estabelecimento2" class="botao_principal text-white">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -273,13 +266,13 @@
                             <p class="card-text">Uma mistura vibrante de sabores exóticos e pratos únicos inspirados
                                 nas culinárias do mundo inteiro.</p>
                             <p class="card-text"><strong>Avaliação:</strong> 4.7/5</p>
-                            <a href="link-para-estabelecimento3" class="btn btn-primary">Saiba Mais</a>
+                            <a href="link-para-estabelecimento3" class="botao_principal text-white">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button id="load-more-btn" class="btn btn-primary load-more mb-5">Ver mais</button>
+            <button id="load-more-btn" class="botao_principal load-more mb-5 text-white">Ver mais</button>
         </div>
     </div>
 
@@ -309,7 +302,7 @@
                             <input type="checkbox" value="remember-me"> Lembrar-me
                         </label>
                     </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Registar-se</button>
+                    <button class="w-100 botao_principal text-white" type="submit">Registar-se</button>
                     <hr class="my-4">
                     <small class="text-body-secondary">Ao clicar em Registar-se, você concorda com os termos de
                         uso.</small>
@@ -320,7 +313,7 @@
 
 
     <!-- ========================= RODAPE - Kino Angola ========================= -->
-    <footer class="pt-5 px-3 bg-dark text-light">
+    <footer class="pt-5 px-3 bg-dark text-white">
         <div class="row">
             <div class="col-6 col-md-2 mb-3">
                 <h5>Empresa</h5>
@@ -383,7 +376,7 @@
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
                         <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Inscrever</button>
+                        <button class="btn " type="button">Inscrever</button>
                     </div>
                 </form>
             </div>

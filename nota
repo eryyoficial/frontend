@@ -8,7 +8,7 @@
                                 <p class="card-text">Experimente pratos refinados e uma seleção sofisticada de coquetéis
                                     em um ambiente requintado.</p>
                                 <p class="card-text"><strong>Avaliação:</strong> 4.6/5</p>
-                                <a href="link-para-estabelecimento4" class="btn btn-primary">Saiba Mais</a>
+                                <a href="link-para-estabelecimento4" class="btn btn_principal">Saiba Mais</a>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                                 <p class="card-text">Saboreie pratos autênticos da culinária asiática com um toque
                                     especial e ingredientes frescos.</p>
                                 <p class="card-text"><strong>Avaliação:</strong> 4.5/5</p>
-                                <a href="link-para-estabelecimento5" class="btn btn-primary">Saiba Mais</a>
+                                <a href="link-para-estabelecimento5" class="btn btn_principal">Saiba Mais</a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                 <li><a href="../index.html" class="nav-link px-2 text-white fw-medium">Início</a></li>
                 <li><a href="estabelecimentos.html" class="nav-link px-2 text-white fw-medium">Estabelecimentos</a></li>
                 <li><a href="sejamembro.html" class="nav-link px-2 text-white fw-medium">Seja Membro</a></li>
-                <li><a href="contato.html" class="nav-link px-2 text-white fw-medium">Contatos</a></li>
+                <li><a href="contact.html" class="nav-link px-2 text-white fw-medium">Contatos</a></li>
                 <li><a href="about.html" class="nav-link px-2 text-white fw-medium">Sobre</a></li>
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -53,7 +53,7 @@
             </form>
             <div class="text-end">
                 <a href="login.html" type="button" class="btn btn-outline-light me-2">Login</a>
-                <a href="register.html" type="button" class="btn btn-primary">Sign-up</a>
+                <a href="register.html" type="button" class="btn btn_principal">Sign-up</a>
             </div>
     </div>
 </header>
@@ -256,7 +256,7 @@
 
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-primary">Sign-up</button>
+                    <button type="button" class="btn btn_principal">Sign-up</button>
                 </div>
             </div>
         </div>
@@ -310,7 +310,7 @@
         <div class="col-lg-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
                 <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search" class="form-control px-4">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+                <button type="button" class="btn btn_principal btn-lg px-4 me-sm-3">Pesquisar</button>
             </div>
         </div>
 
@@ -322,7 +322,7 @@
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Explore Novas Experiências em Luanda</h1>
                 <p class="lead">Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento. Com a Kino Angola, suas opções são infinitas.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver Estabelecimentos</button>
+                    <button type="button" class="btn btn_principal btn-lg px-4 me-md-2">Ver Estabelecimentos</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4">Criar Conta</button>
                 </div>
             </div>
