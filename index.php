@@ -16,7 +16,11 @@
 </head>
 
 <body>
-    <!-- ========================= CABEÇALHO ========================= -->
+
+    <?php
+        require_once __DIR__ . '/views/layouts/header.html'
+    ?>
+    <!-- ========================= CABEÇALHO ========================= 
     <header class="text-bg-dark sticky-top">
         <div class="d-flex align-items-center justify-content-around menudiv">
             <input type="checkbox" name="check" id="check">
@@ -39,93 +43,93 @@
                     aria-label="Search">
             </form>
             <div class="extras_btn_apply"></div>
-                <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-heart icon_extras'></i></a>
-                <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-user icon_extras'></i></a>
-                <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-cart-alt icon_extras'></i></a>
-            </div>
+            <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-heart icon_extras'></i></a>
+            <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-user icon_extras'></i></a>
+            <a href="views/login.html" type="button" class="text-light me-2"><i class='bx bx-cart-alt icon_extras'></i></a>
+        </div>
         </div>
     </header>
-
+-->
 
 
 
     <!-- ========================= CARROSSEL HERO ========================= -->
-   
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="coverimg-one"></div>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Bem-vindo à Kino Angola</h1>
-            <p class="opacity-75">Encontre os melhores restaurantes, bares, e roulotes da nossa banda</p>
-            <p><a class="btn btn-lg btn-primary" href="#searchfilter">Explorar Agora</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="coverimg-two"></div>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Gastronomia Cultural</h1>
-            <p>Sua Aventura Gastronômica Começa <a class="btn btn-primary" href="views/estabelecimentos.html#cultural">Aqui</a></p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="coverimg-three"></div>
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>Encontre os melhores restaurantes <br> e locais de lazer ao seu redor.</h2>
-            <p><a class="btn btn-lg btn-primary" href="views/estabelecimentos.html">Visitar Estabelecimentos</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-
-
-<!-- ========================= BUSCA RÁPIDA - Kino Angola ========================= -->
-<div class="container col-xxl-8 px-4 py-5">
-    <h1 class="text-center fw-bold text-body-emphasis">Encontre o Seu Próximo Destino de Lazer</h1>
-    <div class="col-lg-6 mx-auto">
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
-            <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search"
-                   class="form-control px-4">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="coverimg-one"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Bem-vindo à Kino Angola</h1>
+                        <p class="opacity-75">Encontre os melhores restaurantes, bares, e roulotes da nossa banda</p>
+                        <p><a class="btn btn-lg btn-primary" href="#searchfilter">Explorar Agora</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="coverimg-two"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Gastronomia Cultural</h1>
+                        <p>Sua Aventura Gastronômica Começa <a class="btn btn-primary" href="views/estabelecimentos.html#cultural">Aqui</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="coverimg-three"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2>Encontre os melhores restaurantes <br> e locais de lazer ao seu redor.</h2>
+                        <p><a class="btn btn-lg btn-primary" href="views/estabelecimentos.html">Visitar Estabelecimentos</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <div class="row align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img src="assets/images/qd (14).png" class="d-block mx-lg-auto img-fluid" alt="Explorar Locais em Luanda"
-                 width="700" height="500" loading="lazy">
+
+
+    <!-- ========================= BUSCA RÁPIDA - Kino Angola ========================= -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1 class="text-center fw-bold text-body-emphasis">Encontre o Seu Próximo Destino de Lazer</h1>
+        <div class="col-lg-6 mx-auto">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
+                <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search"
+                    class="form-control px-4">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Pesquisar</button>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Explore Novas Experiências em Luanda</h1>
-            <p class="lead">Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento. Com a Kino Angola, suas opções são infinitas.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver Estabelecimentos</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Criar Conta</button>
+
+        <div class="row align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/images/qd (14).png" class="d-block mx-lg-auto img-fluid" alt="Explorar Locais em Luanda"
+                    width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Explore Novas Experiências em Luanda</h1>
+                <p class="lead">Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento. Com a Kino Angola, suas opções são infinitas.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver Estabelecimentos</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Criar Conta</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
